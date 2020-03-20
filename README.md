@@ -1,4 +1,4 @@
-# _Vendor and Order Tracker _
+# _Eau Claire's Salon _
 
 ####  MVC application  , March 20 2020_
 
