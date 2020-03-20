@@ -1,10 +1,24 @@
 .card {
-	margin-top: 20px;
 	background-color: #bdcdda96;
-
 }
 
-.card-footer{
-  background-color: #a0b1e096;
+.jumbotron, h2, h1{
+  background-color: #a0b1e06b;
+  color:  #515c80;
+  font-size: 50px;
+  text-align: center;
+}
 
+.card-footer, .card-body {
+  background-color: #a0b1e06b;
+  color:  #515c80;
+}
+
+h4{
+  text-align: center;
+  padding: 10px;
+}
+
+body{
+  background-image: "~/../../img/logo.jpg";
 }

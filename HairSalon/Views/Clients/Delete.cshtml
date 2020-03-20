@@ -4,12 +4,12 @@
 
 @model HairSalon.Models.Client
 
-<h2>Are you sure you want to delete this?</h2>
+<h3>Are you sure you want to delete this?</h3>
 
 @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
 @using (Html.BeginForm())
 {
     <input type="submit" value="Delete" />
 }
-<p>@Html.ActionLink("Back to stylist list", "Index", "Stylists")</p>
-<p>@Html.ActionLink("Back to all clients list", "Index")</p>
+<h4>@Html.ActionLink("Back to stylist list", "Index", "Stylists")</h4>
+<h4>@Html.ActionLink("Back to all clients list", "Index")</h4>

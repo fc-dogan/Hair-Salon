@@ -22,16 +22,16 @@
           <h4>@client.Name</h4>
         </div>  
         <div class="card-body">
-          <h5 class="card-title">Stylist: </h5>
-          <p class="card-text"> @Html.ActionLink($"{client.Stylist.Name}", "Details", "Stylists", new { id = client.Stylist.StylistId })</p>
+          <h4 class="card-title">Stylist: </h4>
+          <h4 class="card-text"> @Html.ActionLink($"{client.Stylist.Name}", "Details", "Stylists", new { id = client.Stylist.StylistId })</h4>
         </div>  
       </div> 
     </div>
   }
 </div>
 
-<p>@Html.ActionLink("Add new client", "Create")</p>
+<h4>@Html.ActionLink("Add new client", "Create")</h4>
 
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+<h4>@Html.ActionLink("Home", "Index", "Home")</h4>
 
 

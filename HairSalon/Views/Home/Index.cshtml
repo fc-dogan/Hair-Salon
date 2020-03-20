@@ -1,7 +1,11 @@
 @{
   Layout = "_Layout";
 }
+<div class="jumbotron">
+  <h1>Welcome to the Eau Claire's Salon!</h1>
+</div>
+<div class="container">
+  <h1>@Html.ActionLink("See all stylists", "Index", "Stylists")</h1> 
+  <img src="~/img/logo.jpg" alt="logo">
+</div>
 
-<h1>Welcome to the Eau Claire's Salon!</h1>
-
-<p>@Html.ActionLink("See all stylists", "Index", "Stylists")</p> 
