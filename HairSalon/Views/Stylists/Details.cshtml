@@ -9,21 +9,40 @@
 <h2>@Model.Name's Clients</h2>
 <hr />
 
-<ol>
+
 @if (@Model.Clients.Count == 0)
 {
   <p>No Clients have been added yet!</p>
 }
 
-@foreach (Client client in @Model.Clients)
-{
-  <li> @client.Name
-    <p>@Html.ActionLink($"delete", "Delete", "Clients", new { id = client.ClientId }) </p> 
-    <p>@Html.ActionLink($"edit", "Edit", "Clients", new { id = client.ClientId }) </p> 
-  </li>
-}
-</ol>
+<div class="row" >  
+  @foreach (Client client in @Model.Clients)
+  {
+    <div class="col col-md-3">
+      <div class="card border-success mb-3" style="max-width: 10rem;" >
+        <div class="card-header" style="height:4rem">
+          <h4>@client.Name</h4>
+        </div>  
+        <div class="card-footer" > 
+          <div class="row">
+            <div class="col-xs-6">
+                <p>@Html.ActionLink($"delete", "Delete", "Clients", new { id = client.ClientId }) </p>
+            </div>
+            <div class="col-xs-6">
+              <p>@Html.ActionLink($"edit", "Edit", "Clients", new { id = client.ClientId }) </p>
+            </div>
+          </div>    
+        </div>   
+      </div>  
+    </div>
+  }
+</div>
+
 
 <p>@Html.ActionLink("Add a new client", "Create", "Clients")</p>
 
 <p>@Html.ActionLink("Back to stylists", "Index")</p>
+
+
+
+ 
