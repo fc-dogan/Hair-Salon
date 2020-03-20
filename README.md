@@ -1,18 +1,22 @@
 # _Eau Claire's Salon _
 
-####  MVC application  , March 20 2020_
+####  MVC web application to manage hair salon's stylists and clients  , March 20 2020_
 
 #### By _**Fatma C. Dogan**_
 
 ## Description
 
-
+A web application for managing Eau Claire's Salon's employees(stylists) and their clients.
 
 ## Project Specifications
 
 | Behavior | Input | Output |
 |---|:---|:---:|
-|
+|When the user runs the application, they receive a welcome message along with the links for `see all stylists`. | Home page | Welcome to the Eau Claire's Salon!<br> ``see all stylists``|
+|When the user clicks "see all stylist", receives a list of stylists | ``see all stylists`` | Stylists <br>  ``add a new stylist  `` |
+|When a user clicks on "add a new stylist ", they recevies a form to add a new stylist| ``add a new stylist  `` | Add a new Stylist <br> Name : |
+|When a User Adds a new stylist they are directed to the Stylists list page | Name: Claire | ``Claire`` |
+|When a user clicks on a `Client list ` under stylist name, they receive a list of Clients of that Stylist | stylist "Claire" <br> `Client list `  | "Claire's Clients" <br> list of clients |
 
 
 
