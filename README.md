@@ -100,7 +100,7 @@ _In Terminal:_
 > CREATE TABLE `clients` (
   `ClientId` int NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
-  `SytlistId` int DEFAULT '0',
+  `StylistId` int DEFAULT '0',
   PRIMARY KEY (`ClientId`)
 );
 
