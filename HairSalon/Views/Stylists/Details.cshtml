@@ -9,7 +9,7 @@
 <h2>@Model.Name's Clients</h2>
 <hr />
 
-<ul>
+<ol>
 @if (@Model.Clients.Count == 0)
 {
   <p>No Clients have been added yet!</p>
@@ -17,9 +17,12 @@
 
 @foreach (Client client in @Model.Clients)
 {
-  <li>Client: @client.Name </li>
+  <li> @client.Name
+    <p>@Html.ActionLink($"delete", "Delete", "Clients", new { id = client.ClientId }) </p> 
+    <p>@Html.ActionLink($"edit", "Edit", "Client", new { id = client.ClientId }) </p> 
+  </li>
 }
-</ul>
+</ol>
 
 <p>@Html.ActionLink("Add a new client", "Create", "Clients")</p>
 
