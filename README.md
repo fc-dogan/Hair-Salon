@@ -15,9 +15,16 @@ A web application for managing Eau Claire's Salon's employees(stylists) and thei
 |When the user runs the application, they receive a welcome message along with the links for `see all stylists`. | Home page | Welcome to the Eau Claire's Salon!<br> ``see all stylists``|
 |When the user clicks "see all stylist", receives a list of stylists | ``see all stylists`` | Stylists <br>  ``add a new stylist  `` |
 |When a user clicks on "add a new stylist ", they recevies a form to add a new stylist| ``add a new stylist  `` | Add a new Stylist <br> Name : |
-|When a User Adds a new stylist they are directed to the Stylists list page | Name: Claire | ``Claire`` |
-|When a user clicks on a `Client list ` under stylist name, they receive a list of Clients of that Stylist | stylist "Claire" <br> `Client list `  | "Claire's Clients" <br> list of clients |
-
+|When a User Adds a new stylist they are directed to the Stylists list page | Name: Claire | ``Claire`` <br> "``client list``" |
+|When a user clicks on a `Client list ` under a stylist name, they receive a list of Clients of that Stylist | stylist: ``Claire`` <br> "``client list``"  | "Claire's Clients" <br> list of clients |
+|The user receives "edit" and "delete" links under each client name | |client name <br> ``delete`` -- ``edit``|
+|When the user clicks on "edit" link, they are directed to the client edit page | ``edit`` | "Edit" <br> Name: <br> `save` |
+|After user save the changes, they are directed to the clients list page | `save` | "Clients list" | 
+|When the user clicks on "delete" link, they are directed to the client delete page | ``delete`` | "Are you sure you want to delete this?" <br> Name: Claire <br> button:`delete` | 
+|After user delete the client, they are directed to the stylists list page | ``delete`` | "Stylists" |
+|The user receives `add a new client` link on Stylist's client list page | ||
+|When the user clicks on `add a new client` link, they are directed to client create form page |`add a new client`  |"add an new client" <br> Name:  <br> `"add new client`| 
+|After user create a new client and submit the form, they are directed to the  clients list page | Name : "Sofia"<br> Stylist: "Claire"  | "Clients list"|
 
 
 ## Setup/Installation Requirements
